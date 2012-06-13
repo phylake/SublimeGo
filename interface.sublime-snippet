@@ -1,0 +1,10 @@
+<snippet>
+	<description>interface</description>
+		<content><![CDATA[
+type $1 interface {
+	$0
+}
+]]></content>
+		<tabTrigger>interface</tabTrigger>
+		<scope>source.go</scope>
+</snippet>

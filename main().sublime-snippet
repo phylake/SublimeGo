@@ -1,0 +1,17 @@
+<snippet>
+	<description>main()</description>
+		<content><![CDATA[
+package main
+
+import (
+	${1:"fmt"}
+)
+
+func main() {
+	${0:fmt.Println("Hello World")}
+}
+
+]]></content>
+		<tabTrigger>main</tabTrigger>
+		<scope>source.go</scope>
+</snippet>
