@@ -1,0 +1,8 @@
+<snippet>
+	<description>new - new(Foo)</description>
+		<content><![CDATA[
+new(${1:Foo})
+]]></content>
+		<tabTrigger>new</tabTrigger>
+		<scope>source.go</scope>
+</snippet>
