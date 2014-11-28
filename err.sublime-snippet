@@ -1,5 +1,5 @@
 <snippet>
-    <description>err</description>
+    <description>err != nil</description>
         <content><![CDATA[
 if err != nil {
     $0
