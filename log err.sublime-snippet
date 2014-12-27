@@ -1,8 +1,8 @@
 <snippet>
-    <description>log.Error(err.Error())</description>
-        <content><![CDATA[
+	<description>log.Error(err.Error())</description>
+	<content><![CDATA[
 log.Error(err.Error())
 ]]></content>
-        <tabTrigger>log</tabTrigger>
-        <scope>source.go</scope>
+	<tabTrigger>log</tabTrigger>
+	<scope>source.go</scope>
 </snippet>

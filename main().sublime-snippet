@@ -1,6 +1,6 @@
 <snippet>
 	<description>main()</description>
-		<content><![CDATA[
+	<content><![CDATA[
 package main
 
 import (
@@ -12,6 +12,6 @@ func main() {
 }
 
 ]]></content>
-		<tabTrigger>main</tabTrigger>
-		<scope>source.go</scope>
+	<tabTrigger>main</tabTrigger>
+	<scope>source.go</scope>
 </snippet>

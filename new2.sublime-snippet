@@ -1,8 +1,8 @@
 <snippet>
-    <description>new - &amp;Foo{}</description>
-        <content><![CDATA[
+	<description>new - &amp;Foo{}</description>
+	<content><![CDATA[
 &${1:Foo}{${2:initValue}}
 ]]></content>
-        <tabTrigger>new</tabTrigger>
-        <scope>source.go</scope>
+	<tabTrigger>new</tabTrigger>
+	<scope>source.go</scope>
 </snippet>

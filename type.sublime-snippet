@@ -1,8 +1,8 @@
 <snippet>
 	<description>type</description>
-		<content><![CDATA[
+	<content><![CDATA[
 type ${1:name} ${2:int8}
 ]]></content>
-		<tabTrigger>type</tabTrigger>
-		<scope>source.go</scope>
+	<tabTrigger>type</tabTrigger>
+	<scope>source.go</scope>
 </snippet>

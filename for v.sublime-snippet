@@ -1,10 +1,10 @@
 <snippet>
-    <description>for (_,value)</description>
-        <content><![CDATA[
+	<description>for (_,value)</description>
+	<content><![CDATA[
 for _, ${1:value} := range ${2:someRange} {
-    $0
+	$0
 }
 ]]></content>
-        <tabTrigger>for</tabTrigger>
-        <scope>source.go</scope>
+	<tabTrigger>for</tabTrigger>
+	<scope>source.go</scope>
 </snippet>
