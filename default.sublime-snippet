@@ -1,0 +1,6 @@
+<snippet>
+	<description>default:</description>
+	<content><![CDATA[default:]]></content>
+	<tabTrigger>default</tabTrigger>
+	<scope>source.go</scope>
+</snippet>
