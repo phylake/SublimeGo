@@ -1,0 +1,9 @@
+<snippet>
+	<description>case (channel)</description>
+	<content><![CDATA[
+case ${1:msg} := <-${2:channel}:
+	$0
+]]></content>
+	<tabTrigger>case</tabTrigger>
+	<scope>source.go</scope>
+</snippet>
