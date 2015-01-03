@@ -2,7 +2,9 @@
 	<description>test</description>
 	<content><![CDATA[
 func Test$1(t *testing.T) {
-	${2:t.Parallel()}$0
+	t.Parallel()
+
+	$0
 }
 ]]></content>
 	<tabTrigger>test</tabTrigger>

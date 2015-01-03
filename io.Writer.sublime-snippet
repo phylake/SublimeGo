@@ -2,7 +2,7 @@
 	<description>io.Writer.Write</description>
 	<content><![CDATA[
 func (recv *$1) Write(p []byte) (n int, err error) {
-    return 0, io.EOF$0
+	return 0, io.EOF$0
 }
 ]]></content>
 	<tabTrigger>write</tabTrigger>
