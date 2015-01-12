@@ -1,7 +1,7 @@
 <snippet>
 	<description>interface</description>
 	<content><![CDATA[
-type $1 interface {
+interface {
 	$0
 }
 ]]></content>
