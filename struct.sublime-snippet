@@ -1,7 +1,7 @@
 <snippet>
 	<description>struct</description>
 	<content><![CDATA[
-type $1 struct {
+struct {
 	$0
 }
 ]]></content>
