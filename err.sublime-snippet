@@ -2,7 +2,7 @@
 	<description>err != nil</description>
 	<content><![CDATA[
 if err != nil {
-	${1:return nil, err}$0
+	$0
 }
 ]]></content>
 	<tabTrigger>err</tabTrigger>

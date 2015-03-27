@@ -1,0 +1,8 @@
+<snippet>
+	<description>map[string]interface{}</description>
+	<content><![CDATA[
+map[${1:string}]${2:interface\{\}}$0
+]]></content>
+	<tabTrigger>map</tabTrigger>
+	<scope>source.go</scope>
+</snippet>

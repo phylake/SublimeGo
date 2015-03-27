@@ -1,0 +1,10 @@
+<snippet>
+	<description>io.Closer.Close</description>
+	<content><![CDATA[
+func (recv *$1) Close() error {
+	return nil$0
+}
+]]></content>
+	<tabTrigger>close</tabTrigger>
+	<scope>source.go</scope>
+</snippet>

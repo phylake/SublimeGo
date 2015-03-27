@@ -1,0 +1,21 @@
+<snippet>
+	<description>sync.WaitGroup (inline)</description>
+	<content><![CDATA[
+var wg sync.WaitGroup
+wg.Add(1)
+go func () {
+	defer wg.Done()
+	$0
+}()
+
+wg.Add(1)
+go func () {
+	defer wg.Done()
+
+}()
+
+wg.Wait()
+]]></content>
+	<tabTrigger>wg</tabTrigger>
+	<scope>source.go</scope>
+</snippet>
