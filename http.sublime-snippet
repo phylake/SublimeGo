@@ -1,0 +1,26 @@
+<snippet>
+	<description>http (hello world)</description>
+	<content><![CDATA[
+package main
+
+import (
+	"fmt"
+	"net/http"
+)
+
+const port = 8080
+
+func Handler(w http.ResponseWriter, r *http.Request) {
+	fmt.Println("r.URL", r.URL)
+}
+
+func main() {
+	http.HandleFunc("/", Handler)
+	
+	fmt.Printf("listing on %d\n", port)
+	http.ListenAndServe(fmt.Sprintf(":%d", port), nil)
+}
+]]></content>
+	<tabTrigger>http</tabTrigger>
+	<scope>source.go</scope>
+</snippet>
