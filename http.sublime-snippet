@@ -8,10 +8,10 @@ import (
 	"net/http"
 )
 
-const port = 8080
+const port = 3000
 
 func Handler(w http.ResponseWriter, r *http.Request) {
-	fmt.Println("r.URL", r.URL)
+	w.Write([]byte("PONG"))
 }
 
 func main() {
