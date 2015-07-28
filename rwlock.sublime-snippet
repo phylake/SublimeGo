@@ -1,0 +1,22 @@
+<snippet>
+	<description>rw lock</description>
+	<content><![CDATA[
+$1.RLock()
+
+if $2 == nil {
+	$1.RUnlock()
+	$1.Lock()
+	defer $1.Unlock()
+
+	// Multiple readers could be at $1.Lock()
+	// Check condition again
+	if $2 == nil {
+		$2 = $0
+	}
+} else {
+	$1.RUnlock()
+}
+]]></content>
+	<tabTrigger>rw</tabTrigger>
+	<scope>source.go</scope>
+</snippet>
