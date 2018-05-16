@@ -1,0 +1,27 @@
+<snippet>
+	<description>aws api call</description>
+	<content><![CDATA[
+${2/(\w)(.*)/\L\1\E\2/g}Input := &$3.$2Input{
+	$0
+}
+var ${2/(\w)(.*)/\L\1\E\2/g}Output *$3.$2Output
+
+retryMsg := func(i int) { log.Warn("$3:$2 retrying", "Count", i) }
+if !util.SuccessRetryer(3, retryMsg, func() bool {
+
+	log.Info("$3:$2")
+	${2/(\w)(.*)/\L\1\E\2/g}Output, err = $1.$2(${2/(\w)(.*)/\L\1\E\2/g}Input)
+	if err != nil {
+		log.Error("$3:$2", "Error", err)
+		return false
+	}
+
+	return true
+}) {
+	log.Error("Failed to $3:$2")
+	return
+}
+]]></content>
+	<tabTrigger>aws</tabTrigger>
+	<scope>source.go</scope>
+</snippet>

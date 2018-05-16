@@ -1,0 +1,8 @@
+<snippet>
+	<description>log log15.Logger</description>
+	<content><![CDATA[
+log log15.Logger
+]]></content>
+	<tabTrigger>log15</tabTrigger>
+	<scope>source.go</scope>
+</snippet>

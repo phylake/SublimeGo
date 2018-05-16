@@ -1,0 +1,30 @@
+<snippet>
+	<description>http (hello world)</description>
+	<content><![CDATA[
+package main
+
+import (
+	"fmt"
+	"net/http"
+	"os"
+)
+
+func Handler(w http.ResponseWriter, r *http.Request) {
+	w.Write([]byte("PONG"))
+}
+
+func main() {
+	http.HandleFunc("/", Handler)
+
+	port := os.Getenv("PORT")
+	if port == "" {
+		port = "3000"
+	}
+
+	fmt.Println("listing on " + port)
+	http.ListenAndServe(":"+port, nil)
+}
+]]></content>
+	<tabTrigger>http</tabTrigger>
+	<scope>source.go</scope>
+</snippet>
